@@ -118,7 +118,7 @@ Python, Flask, FastAPI, Node.js, SQL Databases, REST APIs, Data Science, Machine
 - Conducted **story coherence validation** and assisted in documentation of the reproducibility process and workflow.
 
 **🔧 Skillset:**  
-Python, Machine Learning, Deep Learning, Data Science, Recommender Systems, Blockchain Technologies
+Python, Machine Learning, Data Science
 
 ---
 
