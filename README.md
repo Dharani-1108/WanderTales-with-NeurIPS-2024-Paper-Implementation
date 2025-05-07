@@ -20,8 +20,8 @@ WanderTales AI creates **personalized travel plans** with **immersive AI-generat
 ## 🛠 **Setup & Installation**
 ### 📌 **1. Clone the Repository**
 ```bash
-git clone https://github.com/pavan7357/WanderTales_Week7HandsOn.git
-cd WanderTales_Week7HandsOn
+git clone https://github.com/pavan7357/WanderTales-with-NeurIPS-2024-Paper-Implementation.git
+cd WanderTales-with-NeurIPS-2024-Paper-Implementation
 ```
 ### 📌 **2. Create a Virtual Environment**
 ```bash
