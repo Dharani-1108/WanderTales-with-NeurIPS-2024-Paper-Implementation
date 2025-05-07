@@ -1,7 +1,7 @@
 # 🌍✈️ **WanderTales AI Travel Planner**
 🚀 **Your AI-powered assistant for effortless travel planning!**  
 
-WanderTales AI creates **personalized travel plans** with **immersive AI-generated stories, real-time flight & hotel details, weather forecasts, and stunning AI-generated images & videos.**  
+WanderTales AI creates **personalized travel plans** with **immersive AI-generated stories, real-time flight & hotel details, weather forecasts, hallucination-checked storytelling, and stunning AI-generated images & videos.**  
 
 ---
 
@@ -14,6 +14,33 @@ WanderTales AI creates **personalized travel plans** with **immersive AI-generat
 **🌦 Live Weather Updates** – Stay prepared  
 **🏨 Hotel & 🍽️ Restaurant Suggestions** – Top-rated places to stay & dine  
 **✈️ Real-Time Flights** – Up-to-date flight details  
+**🧠 Hallucination Detection** – Reliable and validated travel storytelling using LLM-Check  
+**🎨 Image Segmentation** – Subject-background separation via DiffCut  
+
+---
+
+## 🧠 **Research-Driven Enhancements (NeurIPS 2024 Paper Integration)**
+
+### 📄 **Paper 1: DiffCut – Zero-Shot Image Segmentation**
+- Integrated **DiffCut** to auto-detect and segment landmarks, people, and objects in user-uploaded or AI-generated photos.  
+- Used **Latent Diffusion Model (LDM)** and **Recursive Normalized Cut** to create zero-shot segmentation masks.  
+- Applied **PAMR** and **median filtering** for post-processing.  
+- Generated **overlay** and **blurred background isolation views** to enhance story visuals.  
+- Reproduced core visuals from the paper and demonstrated with custom travel photos in the app.  
+
+> 📸 *“Auto-segment and spotlight your memories.”*
+
+---
+
+### 📄 **Paper 2: LLM-Check – Hallucination Detection for Narratives**
+- Integrated **LLM-Check** to evaluate AI-generated travel stories for hallucinations.  
+- Ran evaluation using **GPT-2, GPT-Neo-1.3B**, and **LLaMA-2-7B**.  
+- Computed **perplexity** and **entropy** scores for both **RAG** and **non-RAG** outputs.  
+- Handled Hugging Face model loading, token setup, and quantized model optimization.  
+- Filtered or flagged hallucinated responses to improve user trust in storytelling.  
+
+> 🧾 *“Travel stories you can trust – evaluated for factual accuracy.”*
+
 
 ---
 
@@ -47,41 +74,51 @@ Alternatively, you can store them in **secrets.toml** for Streamlit deployment.
 
 ---
 
+
 ## 👥 **Team Name: The WanderCoders**
 
-### 🚀 **Dharani Thakkallapally (AI & NLP Engineer)**
-- Develop **AI-based dynamic storytelling** using **NLP models** (Hugging Face, GPT-based models).  
-- Fine-tune **pre-trained NLP models** for travel-specific content generation.  
-- Implement **algorithms for personalized travel recommendations**.  
-- Ensure **seamless integration** between **AI-generated narratives** and **travel plans**.  
-- **Skillset:** Data Science, Machine Learning, Deep Learning, Python, Cloud Platforms  
+---
+
+### 🎨 Viswanth Tammana (Frontend Developer | Team Lead)
+- Reproduced and enhanced **DiffCut** integration into the frontend.
+- Used AI-generated travel images to apply zero-shot segmentation and background blurring.
+- Built the UI using **Streamlit** to showcase masked visuals and support dynamic story visuals.
+- Currently working on full integration of **DiffCut** into the WanderTales storytelling pipeline.
+
+**🔧 Skillset:**  
+Python, Streamlit, React.js, REST APIs, Machine Learning, Deep Learning, Data Science
 
 ---
 
-### 🎯 **Banu Teja Jampani (AI-Powered Recommendation Engineer)**
-- **Design and implement** a **personalized recommendation engine** based on **user preferences & reviews**.  
-- Utilize **machine learning models** and **rule-based filtering** for **tailored travel plans**.  
-- Adapt **recommendations dynamically** based on **real-time factors** (weather, delays).  
-- **Document** project workflow, methodologies, and results.  
-- **Skillset:** Data Science, Machine Learning, Deep Learning, Python, Blockchain Technologies  
+### 🚀 Dharani Thakkallapally (AI & NLP Engineer)
+- Integrated the **LLM-Check** hallucination evaluation method into the WanderTales project.
+- Evaluated hallucination risks using **perplexity and entropy** metrics across **GPT-2, GPT-Neo-1.3B, and LLaMA-2-7B**.
+- Handled Hugging Face model setup, authentication, and dependency installation.
+- Summarized findings in a reproducibility report with detailed metric insights.
+
+**🔧 Skillset:**  
+Python, NLP, Hugging Face Transformers, GPT models, Machine Learning, Deep Learning, Data Science, Cloud Platforms
 
 ---
 
-### 🔗 **Pavan Sundar Reddy Guthikonda (Backend & API Integration Developer)**
-- Develop and manage **backend architecture** using **Flask/FastAPI**.  
-- Integrate **APIs** (Google Places, OpenWeatherMap, Amadeus API, SerpAPI) for **real-time data**.  
-- Build **RESTful APIs** for **frontend-backend communication**.  
-- Manage **local storage** for **user data and preferences**.  
-- **Skillset:** Data Science, Machine Learning, Deep Learning, Python, Node.js, SQL Databases  
+### 🔗 Pavan Sundar Reddy Guthikonda (Backend & API Integration)
+- Developed and maintained the **Flask/FastAPI** backend architecture.
+- Integrated real-time APIs: **Google Maps, Amadeus, OpenWeather, SerpAPI** for dynamic data fetching.
+- Managed local storage and backend-to-frontend communication.
+- Partially contributed to the **hallucination rate evaluation** by comparing **RAG vs non-RAG** narrative outputs.
+
+**🔧 Skillset:**  
+Python, Flask, FastAPI, Node.js, SQL Databases, REST APIs, Data Science, Machine Learning, Deep Learning
 
 ---
 
-### 🎨 **Viswanth Tammana (Frontend Developer | Team Lead)**
-- Build an **interactive UI** using **Streamlit**.  
-- Ensure **smooth real-time updates** from backend to frontend.  
-- Implement **UI components** for travel recommendations & dynamic storytelling.  
-- Collaborate with **Banu** to display **personalized recommendations** in the UI effectively.  
-- **Skillset:** Data Science, Machine Learning, Deep Learning, Python, React.js, REST API  
+### 🎯 Banu Teja Jampani (Tester)
+- Designed and implemented the **personalized recommendation engine** using user preferences and rule-based filters.
+- Enabled dynamic updates based on **real-time inputs** like weather and transport delays.
+- Conducted **story coherence validation** and assisted in documentation of the reproducibility process and workflow.
+
+**🔧 Skillset:**  
+Python, Machine Learning, Deep Learning, Data Science, Recommender Systems, Blockchain Technologies
 
 ---
 
@@ -94,3 +131,5 @@ Alternatively, you can store them in **secrets.toml** for Streamlit deployment.
 ---
 
 📌 **Developed by:** [The WanderCoders Team] 🚀🎉  
+🎓 **Powered by** NeurIPS 2024 open-source research for real-world AI applications.
+
