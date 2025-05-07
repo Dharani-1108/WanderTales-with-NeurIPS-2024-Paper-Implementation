@@ -80,10 +80,15 @@ Alternatively, you can store them in **secrets.toml** for Streamlit deployment.
 ---
 
 ### 🎨 Viswanth Tammana (Frontend Developer | Team Lead)
-- Reproduced and enhanced **DiffCut** integration into the frontend.
-- Used AI-generated travel images to apply zero-shot segmentation and background blurring.
-- Built the UI using **Streamlit** to showcase masked visuals and support dynamic story visuals.
-- Currently working on full integration of **DiffCut** into the WanderTales storytelling pipeline.
+- Led project coordination to ensure all team deliverables were met on time.
+- Designed and implemented **Amadeus API integration**, transforming raw flight data into structured formats.
+- Unified APIs (**Amadeus**, **Google Maps**, **OpenWeather**) for end-to-end itinerary generation.
+- Converted API responses into **vector embeddings** for use in the **RAG-based pipeline**.
+- Developed an **interactive chatbot interface** to gather user preferences and refine trip plans.
+- Compared **Stable Diffusion vs. DALL·E** for generating AI-based visuals and video previews.
+- Built visualizations including **RAG attention heatmaps** and **interactive Folium maps**.
+- Implemented **DiffCut segmentation** to isolate subjects and blur backgrounds in generated images.
+
 
 **🔧 Skillset:**  
 Python, Streamlit, React.js, REST APIs, Machine Learning, Deep Learning, Data Science
@@ -91,21 +96,29 @@ Python, Streamlit, React.js, REST APIs, Machine Learning, Deep Learning, Data Sc
 ---
 
 ### 🚀 Dharani Thakkallapally (AI & NLP Engineer)
-- Integrated the **LLM-Check** hallucination evaluation method into the WanderTales project.
-- Evaluated hallucination risks using **perplexity and entropy** metrics across **GPT-2, GPT-Neo-1.3B, and LLaMA-2-7B**.
-- Handled Hugging Face model setup, authentication, and dependency installation.
-- Summarized findings in a reproducibility report with detailed metric insights.
-
+- Generated **AI travel stories, visuals, and video outputs** for personalized trip summaries.
+- Experimented with **LLaMA**, **Mistral 7B**, and other open-source LLMs to reduce reliance on OpenAI.
+- Attempted realistic video generation; pivoted to optimized zoom/pan animations due to model access limitations.
+- Enhanced **prompt engineering** to improve relevance and narrative coherence.
+- Integrated **purpose of visit** into story generation for higher personalization.
+- Investigated **LoRA fine-tuning** for GPT-4, confirmed weight restrictions prevent it.
+- Deployed the complete application on **Streamlit**.
+- Created the **demo video** and **poster** for the Research-A-Thon.
+- Authored **Progress Report 2** and handled **LLM-Check paper reproduction** with metric analysis and documentation.
 **🔧 Skillset:**  
 Python, NLP, Hugging Face Transformers, GPT models, Machine Learning, Deep Learning, Data Science, Cloud Platforms
 
 ---
 
 ### 🔗 Pavan Sundar Reddy Guthikonda (Backend & API Integration)
-- Developed and maintained the **Flask/FastAPI** backend architecture.
-- Integrated real-time APIs: **Google Maps, Amadeus, OpenWeather, SerpAPI** for dynamic data fetching.
-- Managed local storage and backend-to-frontend communication.
-- Partially contributed to the **hallucination rate evaluation** by comparing **RAG vs non-RAG** narrative outputs.
+- Developed the **Frontend using Streamlit**, building responsive and user-friendly UI components.
+- Resolved **deployment issues**, including **MoviePy** failures that occurred only on Streamlit Cloud.
+- Integrated APIs and ensured smooth data flow and **real-time UI rendering**.
+- Enhanced **application performance** using **asynchronous API calls** and layout optimization.
+- Worked on **RAG (Retrieval-Augmented Generation)**:
+  - Set up document embedding and vector indexing.
+  - Implemented **reranking strategies** to improve relevance.
+  - Compared **hallucination rates in RAG vs non-RAG** pipelines to improve story reliability.
 
 **🔧 Skillset:**  
 Python, Flask, FastAPI, Node.js, SQL Databases, REST APIs, Data Science, Machine Learning, Deep Learning
