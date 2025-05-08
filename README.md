@@ -134,7 +134,9 @@ Python, Flask, FastAPI, Node.js, SQL Databases, REST APIs, Data Science, Machine
 Python, Machine Learning, Data Science
 
 ---
-
+## **YouTube Link**
+🔗 https://www.youtube.com/watch?v=KmgBMrlUTYE
+---
 ## 🔧 **Troubleshooting**
 ### ⚠️ **Common Issues & Fixes**:
 - **❌ Invalid API Key Error?** → Ensure your **API keys** are **correctly set**.  
